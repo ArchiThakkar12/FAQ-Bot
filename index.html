@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Using local transformers build to avoid CDN issues -->
+    <script src="https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2/dist/transformers.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>FAQ Assistant</h1>
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages">
+                <div class="bot-message">
+                    Hello! I'm your FAQ assistant. How can I help you today?
+                </div>
+            </div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Type your question here..." autocomplete="off" disabled>
+                <button id="send-btn" disabled>Send</button>
+            </div>
+            <div class="status" id="status">Initializing...</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
